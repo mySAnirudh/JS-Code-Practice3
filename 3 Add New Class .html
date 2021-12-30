@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: blue;
+
+        }
+        .dim{
+             border: 1px solid red ;
+             padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="color">
+        <!-- Dim ke JS me add karna hai -->
+       <p> This is dummy text </p>
+    </div>
+
+    <script>
+        // Here we are check which elemet is added 
+
+        let box = document.getElementById("box");
+
+    //    console.log(box.className);
+     box.className += " dim" ;  // Agar "dim".. " dim" ke pahle space nahi hoga to vo add nahi karega
+    </script>
+</body>
+</html>

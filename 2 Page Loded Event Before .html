@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img id="image1" src="amg.jpg" alt="" width="500"> 
+
+   <script>
+
+       // Isme jab ey p[erticular image jab lode hoga tabhi ye trigeer hoga 
+       window.addEventListener("DOMContentLoaded" , function(){
+           console.log("DOM tree created");
+
+       });
+       window.addEventListener("load" , function(){
+           console.log("Fully Loaded");
+          
+           let img = document.getElementById("image1");
+
+         img.addEventListener("load", function (){
+             console.log("Fully Loaded");
+             
+         })
+
+       });
+   </script>
+</body>
+</html>

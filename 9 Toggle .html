@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: blue;
+
+        }
+        .dim{
+             border: 1px solid red ;
+             padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="color">
+       <p> This is dummy text </p>
+    </div>
+
+    <script>
+     
+        let box = document.getElementById("box");
+
+         // Toggle : Agar laga huva hai to hata do, agar nahi laga hai to laga do
+         box.classList.toggle("dim");
+
+         // Toggle : Agar laga hoga to hata deg agar nahi laga hoga to laga dega
+
+    </script>
+</body>
+</html>

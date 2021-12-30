@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: blue;
+
+        }
+        .dim{
+             border: 1px solid red ;
+             padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="color">
+       <p> This is dummy text </p>
+    </div>
+
+    <script>
+       // This is new way to add another classs
+        let box = document.getElementById("box");
+
+         box.classList.replace("color", "dim");  // Yaha wo bhi batana hi ki kon sa hata hai aur kon sa laga hai
+
+
+
+         
+
+    </script>
+</body>
+</html>
