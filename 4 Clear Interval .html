@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  User ko ek button de diya jaayeor uske click kare to vo band ho jaaye -->
+
+    <button id="btn">
+        Clear Interval
+    </button>
+
+    <script>
+        var t1 = setInterval(fun, 2000);
+        setInterval(fun, 2000);
+        
+        function fun (){
+            console.log("Please Subscribe....");
+
+        }
+        let btn1 = document.getElementById("btn");
+        
+        btn1.addEventListener("click", function(){
+               clearInterval(t1);
+        });
+
+
+        </script>
+</body>
+</html>

@@ -1,1 +1,23 @@
                            [[ JS All of this file ]]
+
+
+      *** Screen Object ***
+
+      ** Screen Object :- Jis screen pe abhi aapka website show ho raha hi uske baare me information 
+           dega Ya uske attribute ke baare me.
+
+           -->> Here we can know the user screen height or width.
+
+        -->> For this data we can anlize the user, how they want to show how our websit is use.
+         Like, in minimize the screen or they how to use like in full view or...
+
+
+
+    ** Color Width :- It's use for anility the websit.
+
+    -->> Iser ke sceen size kitna hai and usme kon kon sa color show hota hai, and uske liye 
+    ham uske hisab se color dikha skate hai maximum user ke pasand se .
+
+    ** Orientation :-  Screen ko ghuma ke kaise dedh rahe hai
+
+    --> Isme ham pata kar sakte hai sabse jayda vied kisme hai, Like Landescape me ya sidha

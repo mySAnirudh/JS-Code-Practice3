@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: blue;
+
+        }
+
+        #myDiv{
+            padding: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+     <div id="myDiv">
+           <button id="btn"> Click Me</button>
+     </div>
+
+     <script>
+         let d = document.getElementById("myDiv");
+         let b = document.getElementById("btn");
+
+         b.addEventListener("click", btnClickd ,true);
+         d.addEventListener("click", divClickd,true);
+         
+         document.body.addEventListener("click", bodyClickd,true);
+
+         function btnClickd(){
+             console.log("button clicked.....");
+
+         }
+         
+         function divClickd(){
+             console.log("div clicked.....");
+             
+         }
+         
+         function bodyClickd(){
+             console.log("body clicked.....");
+             
+         }
+      // Agar koi bhi parameter pass nahi kiya to false hoga  
+     </script>
+</body>
+</html>

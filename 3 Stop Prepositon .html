@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: blue;
+
+        }
+
+        #myDiv{
+            padding: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+     <div id="myDiv">
+           <button id="btn"> Click Me</button>
+     </div>
+
+     <script>
+
+         // Isme ijsper click krege sirf wahi aayag baaki nahi 
+         // Agar baaki per clock krege to dono aayega
+         let d = document.getElementById("myDiv");
+         let b = document.getElementById("btn");
+
+         b.addEventListener("click", btnClickd);
+         d.addEventListener("click", divClickd);
+         
+         document.body.addEventListener("click", bodyClickd);
+
+         function btnClickd(event){
+             console.log("button clicked.....");
+            event.stopPropagation();
+         }
+         
+         function divClickd(event){
+             console.log("div clicked.....");
+             event.stopPropagation();
+         }
+         
+         function bodyClickd(){
+             console.log("body clicked.....");
+             
+         }
+     
+     </script>
+</body>
+</html>
